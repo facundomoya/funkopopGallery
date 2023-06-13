@@ -56,7 +56,7 @@ img:hover{
   filter: sepia(70%);
 }
 
-/* media queries */
+/* medias queries */
 
 /* extra large devices */
 @media all and (min-width: 1024px) and (max-width: 1280px) {
