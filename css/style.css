@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Instrument Sans", sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+header {
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(103, 30, 117, 1) 11.2%,
+    rgba(252, 76, 2, 1) 91.1%
+  );
+  padding: 45px 0px;
+  color: white;
+}
+
+footer {
+  background: black;
+  text-align: center;
+  padding: 30px 0px;
+  color: white;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 0px;
+}
+
+.caja {
+  display: flex;
+  flex-direction: row;
+}
+
+img {
+  width: 300px;
+  margin: 5px 5px;
+  border-radius: 5%;
+  box-shadow: 5px 5px 15px grey;
+}
+
+img:hover{
+  position: relative;
+  top: 3px;
+  right: 5px;
+  filter: sepia(70%);
+}
+
+/* media queries */
+
+/* extra large devices */
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+  img {
+    width: 20%;
+  }
+
+  .caja {
+    justify-content: center;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  footer {
+    margin-top: auto;
+  }
+}
+
+/* tablets */
+@media all and (min-width: 768px) and (max-width: 991px) {
+  img {
+    width: 20%;
+  }
+
+  .caja {
+    justify-content: center;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  footer {
+    margin-top: auto;
+  }
+}
+
+/* cell phones */
+@media all and (min-width: 320px) and (max-width: 767px) {
+  img {
+    width: 22%;
+  }
+
+  .caja {
+    justify-content: center;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  footer {
+    margin-top: auto;
+  }
+}
+
+/* extra small devices */
+@media all and (max-width: 319px) {
+  img {
+    width: 75%;
+  }
+
+  .caja {
+    flex-direction: column;
+    align-items: center;
+  }
+}
